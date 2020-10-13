@@ -6,11 +6,35 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg3267"
    version="1.1"
    viewBox="0 0 640.785 398.266"
    height="398.266pt"
-   width="640.785pt">
+   width="640.785pt"
+   sodipodi:docname="hybrid_model_data.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="760"
+     id="namedview1719"
+     showgrid="false"
+     inkscape:zoom="0.95342476"
+     inkscape:cx="417.2259"
+     inkscape:cy="265.51066"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3267" />
   <metadata
      id="metadata3271">
     <rdf:RDF>
@@ -19,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1290,6 +1314,58 @@
       <feGaussianBlur
          id="feGaussianBlur7846"
          stdDeviation="3.3863852" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter6331"
+       x="-0.099877804"
+       width="1.1997556"
+       y="-0.25492069"
+       height="1.5098414">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="20.324138"
+         id="feGaussianBlur6333" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter6335"
+       x="-0.099877804"
+       width="1.1997556"
+       y="-0.25492069"
+       height="1.5098414">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="20.324138"
+         id="feGaussianBlur6337" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter6339"
+       x="-0.099877804"
+       width="1.1997556"
+       y="-0.25492069"
+       height="1.5098414">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="20.324138"
+         id="feGaussianBlur6341" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter6343"
+       x="-0.099877804"
+       width="1.1997556"
+       y="-0.25492069"
+       height="1.5098414">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="20.324138"
+         id="feGaussianBlur6345" />
     </filter>
   </defs>
   <g
@@ -7957,11 +8033,43 @@
     </g>
   </g>
   <rect
-     transform="matrix(0.24373574,0,0,1.2168524,-25.836015,1.8192887)"
+     transform="matrix(0.24373574,0,0,-1.2168524,-25.836015,250.90396)"
      style="opacity:0.13999999;fill:#d45500;stroke-width:0.75000006;filter:url(#filter7844)"
      y="6.6751747"
      x="134.60936"
      height="191.34552"
      width="488.3761"
      id="rect6963" />
+  <rect
+     id="rect5454"
+     width="488.3761"
+     height="191.34552"
+     x="134.60936"
+     y="6.6751747"
+     style="opacity:0.2;fill:#d45500;stroke-width:0.75000006;filter:url(#filter6343)"
+     transform="matrix(0.08509767,0,0,-0.18664673,567.66409,261.66274)" />
+  <rect
+     transform="matrix(0.08509767,0,0,-0.18664673,468.54771,307.28774)"
+     style="opacity:0.2;fill:#d45500;stroke-width:0.75000006;filter:url(#filter6339)"
+     y="6.6751747"
+     x="134.60936"
+     height="191.34552"
+     width="488.3761"
+     id="rect5456" />
+  <rect
+     id="rect5458"
+     width="488.3761"
+     height="191.34552"
+     x="134.60936"
+     y="6.6751747"
+     style="opacity:0.2;fill:#d45500;stroke-width:0.75000006;filter:url(#filter6331)"
+     transform="matrix(0.08509767,0,0,-0.18664673,199.51755,328.52696)" />
+  <rect
+     transform="matrix(0.08509767,0,0,-0.18664673,398.53694,315.94075)"
+     style="opacity:0.2;fill:#d45500;stroke-width:0.75000006;filter:url(#filter6335)"
+     y="6.6751747"
+     x="134.60936"
+     height="191.34552"
+     width="488.3761"
+     id="rect5460" />
 </svg>
