@@ -279,6 +279,7 @@
         <section >
             <h4><a id="user-content-hybrid-global-hydrological-modelling-using-a-pytorch-based-differential-programming-approach" class="anchor" href="#hybrid-global-hydrological-modelling-using-a-pytorch-based-differential-programming-approach" aria-hidden="true"></a>Hybrid global hydrological modelling using a PyTorch based differential programming approach</h4>
 <h3><a id="user-content-basil-kraft--bkraftbgc-jenampg-de--usmile-kickoff--october-2020" class="anchor" href="#basil-kraft--bkraftbgc-jenampg-de--usmile-kickoff--october-2020" aria-hidden="true"></a><br><small> Basil Kraft | bkraft@bgc-jena.mpg<span>.de</span> | USMILE kickoff | October 2020 </small></h3>
+<h5><a id="user-content-in-collab-with-markus-reichstein-martin-jung-marco-körner" class="anchor" href="#in-collab-with-markus-reichstein-martin-jung-marco-körner" aria-hidden="true"></a>In collab with Markus Reichstein, Martin Jung, Marco Körner</h5>
 <font size="3em" >
 <table>
   <tr>
@@ -297,83 +298,30 @@
   </tr>
 </table>
 </font>
-<!---
-Select theme:
-* Black
-* White
-* League
-* Sky
-* Beige
-* Simple
-* Serif
-* Blood
-* Night
-* Moon
-* Solarized
--->
             </section>
         
             <section >
-                <h2><a id="user-content-my-role-in-usmile" class="anchor" href="#my-role-in-usmile" aria-hidden="true"></a>My role in USMILE</h2>
-<ul>
-<li>Finishing PhD with Markus and Martin, mid 2021</li>
-<li>Postdoc in USMILE</li>
-</ul>
+                <h2><a id="user-content-hybrid-hydrological-modeling-on-global-scale-why" class="anchor" href="#hybrid-hydrological-modeling-on-global-scale-why" aria-hidden="true"></a>Hybrid hydrological modeling on global scale: Why?</h2>
 
             </section>
         
             <section >
-                <h2><a id="user-content-outline" class="anchor" href="#outline" aria-hidden="true"></a>Outline</h2>
-<ul>
-<li>Hybrid hydrological modeling</li>
-<li>Lessons learned</li>
-<li>PyTorch differential programming</li>
-</ul>
+                <h2><a id="user-content-proof-of-concept" class="anchor" href="#proof-of-concept" aria-hidden="true"></a>Proof-of-concept</h2>
 
             </section>
         
             <section >
-                <h2><a id="user-content-hybrid-hydrological-modeling-on-global-scale-introduction" class="anchor" href="#hybrid-hydrological-modeling-on-global-scale-introduction" aria-hidden="true"></a>Hybrid hydrological modeling on global scale: <em>Introduction</em></h2>
-<p><small><strong>Kraft, B., Jung, M., Körner, M., &amp; Reichstein, M.</strong> (2020). HYBRID MODELING: FUSION OF A DEEP LEARNING APPROACH AND A PHYSICS-BASED MODEL FOR GLOBAL HYDROLOGICAL MODELING. The International Archives of Photogrammetry, Remote Sensing and Spatial Information Sciences, 43, 1537-1544.</small></p>
-
-            </section>
-        
-            <section >
-                <table style="width:100%; table-layout:fixed;">
-  <tr>
-    <td style="text-align:center"><font size="+3"">Knowledge based</font></td>
-    <td style="text-align:center"><font size="+3"">Hybrid</font></td>
-    <td style="text-align:center"><font size="+3"">Data driven</font></th>
-  </tr>
-  <tr>
-    <td style="text-align:center"><img src="imgs/hybridconcept_1.png" width=100%></td>
-    <td style="text-align:center"><img src="imgs/hybridconcept_2.png" width=100%></td>
-    <td style="text-align:center"><img src="imgs/hybridconcept_3.png" width=100%></td>
-  </tr>
-</table>
-            </section>
-        
-            <section >
-                <ul>
-<li>Some examples of hybrid modeling of subprocesses
-<ul>
-<li>de Bézenac et al. (2019). J. Stat. Mech. → SST</li>
-<li>Gans et al. (in prep.) → soil respiration</li>
-</ul>
-</li>
-<li>What about large scales?</li>
-</ul>
-
-            </section>
-        
-            <section >
-                <p>→ To test the hybrid approach on global scales we built a  hybrid hydrological model.</p>
+                <h2><a id="user-content-large-disagreement" class="anchor" href="#large-disagreement" aria-hidden="true"></a>Large disagreement</h2>
 <figure>
-  <figure>
-    <img src="imgs/esd.png" width=400/>
-    <figcaption>Mahecha et al. (2020). Earth Syst. Dynam.</figcaption>
-  </figure>
+  <img src="imgs/schellekens.png" width=600/>
+  <figcaption>Soil moisture anomaly climatology over Australia and Southeast Asia for all models compared to ESA CCI SM. Schellekens. (2017). Earth Syst. Sci. Data</figcaption>
 </figure>
+            </section>
+        
+            <section >
+                <h2><a id="user-content-learn-from-eo-data" class="anchor" href="#learn-from-eo-data" aria-hidden="true"></a>Learn from EO data</h2>
+<aside class="notes"> not looking for good performance, but insights</aside>
+
             </section>
         
             <section >
@@ -409,13 +357,15 @@ Select theme:
             </section>
         
             <section >
-                <h2><a id="user-content-hybrid-hydrological-modeling-on-global-scale-lessons-learned" class="anchor" href="#hybrid-hydrological-modeling-on-global-scale-lessons-learned" aria-hidden="true"></a>Hybrid hydrological modeling on global scale: <em>lessons learned</em></h2>
-
+                <figure>
+  <img src="imgs/hybrid_model_data.svg" width=800/>
+  <figcaption>The Hybrid model. (A) Input data (B) LSTM (C) Multi-task yielding latent variables (D) Hydrological balance equations. $\alpha$=fractions | uppercase=states <br>
+  <small>S=snow | G=groundwater | C=cummulative soil water deficit | T=terrestrial water storage | e=evapot. | q=runoff ($q_b$=base, $q_f$=fast) | r=recharge </small></figcaption>
+</figure>
             </section>
         
             <section >
-                <p><em>1) Does hybrid modeling of large scale ES processes work?</em></p>
-<p class="fragment"><span style="color:green"><strong>Yes!</strong></span> Our results are not perfect, but promising.</p>
+                <h2><a id="user-content-some-results" class="anchor" href="#some-results" aria-hidden="true"></a>Some results</h2>
 
             </section>
         
@@ -442,151 +392,13 @@ Select theme:
             </section>
         
             <section >
-                <p><em>2) What <strong>conceptual</strong> problems did we face?</em></p>
-<figure>
-  <img src="imgs/model_v1.svg" width=400/>
-  <figcaption>V1</figcaption>
-</figure>
-<figure>
-  <img src="imgs/model_v2.svg" width=400/>
-  <figcaption>V2</figcaption>
-</figure>
-<figure>
-  <img src="imgs/model_v3.svg" width=400/>
-  <figcaption>V3</figcaption>
-</figure>
-<figure>
-  <img src="imgs/model_v4.svg" width=400/>
-  <figcaption>V4</figcaption>
-</figure>
-            </section>
-        
-            <section >
-                <p>Interpretable compartments</p>
-<p><span style="color:green">process model ↓</span>tweaking
-<span style="color:blue">↑hybrid model</span></p>
-<p>Good model fit</p>
-
-            </section>
-        
-            <section >
-                <p>How do we evaluate the latent variables? What is a “good” model?</p>
-<ul>
-<li>
-<p class="fragment">We used robustness across several CVs on distinct data as indicator for "trust" in latent variables.</p>
-</li>
-<li>
-<p class="fragment">Contrasting to process models, prior knowledge.</p></li>
-</ul>
-
-            </section>
-        
-            <section >
-                <p><em>3) What <strong>technical</strong> problems did we face?</em></p>
-
-            </section>
-        
-            <section >
-                <ul>
-<li>Model training was <strong>slow</strong> (more later)</li>
-<li>Model training was <strong>unstable</strong>.</li>
-</ul>
-<figure>
-  <img src="imgs/learning_curves.svg" width=800/>
-  <figcaption>The training and validation learning curves. Different colors correspond to different, independent CVs. Lines correspont to CV folds.</figcaption>
-</figure>
-            </section>
-        
-            <section >
                 <h2><a id="user-content-differential-programming-with-pytorch" class="anchor" href="#differential-programming-with-pytorch" aria-hidden="true"></a>Differential programming with PyTorch</h2>
 <p><strong>PyTorch</strong> does automatic differentiation: A recorder records what operations have performed, and then it replays it backward to compute the gradients. → <strong>Hybrid modeling out-of-the-box</strong></p>
 
             </section>
         
             <section >
-                <pre><code class="python">
-# Static encoding.
-stat_enc = self.static_enc(static)
-
-# TIME LOOP
-for t, (x_t, prec_t, rn_t, tair_t) in enumerate(
-                                        zip(x.unbind(0),
-                                            prec.unbind(0),
-                                            rn.unbind(0),
-                                            tair.unbind(0))):
-
-    # RECURRENT LAYER
-    # _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-    h_t, c_t = self.lstm_cell(
-        torch.cat((x_t, cwd_t, gw_t, swe_t, stat_enc), dim=1), (h_t, c_t))
-
-    # MULTITASK LAYERS
-    # _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-    fc_out_t = self.fc_multitask(h_t)
-    wfrac_t_, single_vars_t = fc_out_t.chunk(2, dim=-1)
-    wfrac_t_ = self.softplus(wfrac_t_)
-
-    wfrac_t = wfrac_t_ / wfrac_t_.sum(-1, keepdim=True)
-
-    ef_t, sfrac_t, sabl_t = single_vars_t.chunk(3, dim=-1)
-
-    sfrac_t = self.sigmoid(sfrac_t)
-
-    # For temperatures above 5 deg C (278.15 K), set snow fraction to zero.
-    sfrac_t = sfrac_t.where(
-        tair_t < 278.15, torch.tensor(0.0, device=sfrac_t.device, dtype=sfrac_t.dtype))
-
-    sabl_t = self.softplus(sabl_t)
-
-    ef_t = self.sigmoid(ef_t)  # scale between 0 ad 1
-
-    qf_frac_t, smrec_frac_t, gwrec_frac_t = wfrac_t.chunk(3, dim=-1)
-
-    cwd_overflow_qf_frac_t = qf_frac_t / (qf_frac_t + gwrec_frac_t)
-
-    # HYDROLOGICAL EQUATIONS
-    # _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-    # Rn (W m-2) * 0.0864 -> LE (MJ m-2 d-1)
-    # LE (MJ m-2 d-1) / 2.45 -> ET (mm d-1)
-    et_t = ef_t * self.relu(rn_t) * 0.0864 / 2.45
-
-    # Snow accumulation and melt.
-    sacc_t = prec_t * sfrac_t
-    sabl_t = torch.min(sabl_t, swe_t)
-
-    dswe_t = sacc_t - sabl_t
-    swe_t = swe_t + dswe_t
-
-    # The total water input, precipitation - change in snow water equivalent
-    winp_t = prec_t - dswe_t
-
-    # The input is partitioned into fast runoff, soil moisture recharge and
-    # ground water recharge.
-    qf_t = winp_t * qf_frac_t
-    smrec_t = winp_t * smrec_frac_t
-    gwrec_t = winp_t * gwrec_frac_t
-
-    # [...]
-
-</code></pre>
-            </section>
-        
-            <section >
-                <p>PyTorch handles backpropagation with various gradient descent methdos. Nothing «special» about hybrid modeling (technically).</p>
-
-            </section>
-        
-            <section >
-                <h2><a id="user-content-pytorch--hybrid-modeling" class="anchor" href="#pytorch--hybrid-modeling" aria-hidden="true"></a>PyTorch &amp; hybrid modeling</h2>
-<ul>
-<li>PyTorch has a huge codebase and most model architectures are implemented (also novel ones).</li>
-<li>Hybrid comes out-of-the-box</li>
-<li>Slow, as we can’t use highly optimized building blocks. We need our own ones.</li>
-<li>So far, we use simple models, no need for fancy DL → Julia?</li>
-</ul>
+                <p>→ PyTorch handles backpropagation with various gradient descent methdos. Nothing «special» about hybrid modeling (technically speaking).</p>
 
             </section>
         
@@ -597,6 +409,11 @@ for t, (x_t, prec_t, rn_t, tair_t) in enumerate(
 <p><strong>hybrid ES model</strong></p>
 <p>↑</p>
 <p><span style="color:red"><strong>bottom up</strong></br>(methodoligical, data-scientific aspects, small models/experiments)</span></p>
+
+            </section>
+        
+            <section >
+                <p><small><strong>Kraft, B., Jung, M., Körner, M., &amp; Reichstein, M.</strong> (2020). HYBRID MODELING: FUSION OF A DEEP LEARNING APPROACH AND A PHYSICS-BASED MODEL FOR GLOBAL HYDROLOGICAL MODELING. The International Archives of Photogrammetry, Remote Sensing and Spatial Information Sciences, 43, 1537-1544.</small></p>
 
             </section>
         
