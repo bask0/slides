@@ -56,3 +56,15 @@
   z-index:-10;
   width:50%;
 }
+
+.S {
+  color:rgb(0, 138, 218);
+}
+
+.T {
+  color:rgb(218, 98, 0);
+}
+
+.footnote {
+  font-size: x-small;
+}
